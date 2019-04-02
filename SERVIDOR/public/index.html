@@ -1,0 +1,76 @@
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="./js/jquery-3.3.1.js"></script>
+	<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="container">
+<h3>Insertar</h3>
+<form class="form" id="Insertar">
+	<div class="form-group"> 
+      <label>Nombre de la ruta</label>
+      <input class="form-control" name="routeName" />
+	</div>
+	<div class="form-group">
+		<label>Origen</label>
+		<input class="form-control" name="origin" />
+	</div>
+	<div class="form-group">
+		<label>Destino</label>
+		<input class="form-control" name="destiny" />
+	</div>
+
+	<button class="btn btn-success" id="Insert" type="submit" name="submit">Subir</button>
+</form>
+<hr/>
+<h3>Eliminar</h3>
+<form class="form"  id="Eliminar">
+	<div class="form-group">
+		<div class="row">
+			<div class="col-md-7">
+				<input class="form-control" name="id" placeholder="ID" />
+			</div>
+			<div class="col-md-5">
+				<button class="btn btn-warning" id="Delete" type="submit" name="submit">Eliminar</button>
+			</div>
+		</div>
+	</div>
+</form>
+<hr/>
+<h3>Actualizar y buscar</h3>
+<form class="form"  id="Actualizar">
+	<div class="form-group">
+		<div class="row">
+			<div class="col-md-7">
+				<input class="form-control" name="id" id="up-id" placeholder="ID" />	
+			</div>
+			<div class="col-md-5">
+				<button class="btn btn-info"  id="Search" />busqueda</button>
+			</div>
+
+		</div>
+
+	</div>
+	<div class="form-group">
+		<label>Ruta:</label>
+		<input class="form-control" id="id1" name="routeName" />
+	</div>
+	<div class="form-group">
+		<label>Origen:</label>
+		<input class="form-control" id="id2" name="origin" />
+	</div>
+	<div class="form-group">
+		<label>Destino:</label>
+		<input class="form-control" id="id3" name="destiny" />
+	</div>
+
+	<button class="btn btn-success" id="Update" type="submit" name="submit">Actualizar</button>
+</form>
+</div>
+
+
+<script type="text/javascript" src="./js/index.js"></script>
+
+</body>
+</html>

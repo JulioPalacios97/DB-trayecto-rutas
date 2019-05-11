@@ -1,0 +1,124 @@
+<html>
+<head>
+	<title></title>
+	<link href="/public/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Mostrar </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/crear">Crear <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/editar">Editar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/eliminar">Eliminar</a>
+        </li>
+      </ul>
+      
+    </div>
+  </nav>
+
+
+<div class="container">
+<!--
+<ul class="nav nav-tabs" role="tablist">
+
+  <li class="nav-item">
+  	<a class="nav-link active" data-toggle="tab" role="tab" href="#companySection" aria-controls="company" aria-selected="true">Crear compañia</a>
+  </li>
+
+  <li class="nav-item">
+  	<a class="nav-link" data-toggle="tab" role="tab"  href="#routeSection" aria-controls="route" aria-selected="false">Crear Ruta</a>
+  </li>
+
+  <li class="nav-item">
+  	<a  class="nav-link" data-toggle="tab" role="tab"  href="#brandSection" aria-controls="brand"  aria-selected="false">Crear Marca</a>
+  </li>
+</ul>
+-->
+
+<ul class="nav nav-tabs">
+  <li id="tab-link1" class="nav-link active"><a data-toggle="tab" href="#" onclick="change(1)">Company</a></li>
+  <li id="tab-link2" class="nav-link"><a data-toggle="tab" href="#"onclick="change(2)">Route</a></li>
+    <li id="tab-link3" class="nav-link"><a data-toggle="tab" href="#" onclick="change(3)">Brand</a></li>
+</ul>
+
+
+<div class="tab-content">
+	<div id="companySection" class="tab-pane active">
+		<h3>Insertar compañia</h3>
+		<form  id="InsertcompanyForm">
+ 		<!-- tabla companies -->
+			<div class="form-group"> 
+      			<label>Nombre de la compañia</label>
+      			<input class="form-control" name="companyName" />
+			</div>
+			<div class="form-group">
+				<label>direccion</label>
+				<input class="form-control" name="address" />
+			</div>
+			<div class="form-group">
+				<label>telefono</label>
+				<input class="form-control" name="telephone" />
+			</div>
+			<button class="btn btn-success" id="Insertcompany" type="submit" name="submit">Subir</button>
+		</form>
+	</div>
+	<div class="tab-pane" id="routeSection">
+		<h3>Insertar ruta</h3>
+		<form id="Insertar">
+		    <!-- tabla routes -->
+			<div class="form-group"> 
+      			<label>Nombre de la ruta</label>
+      			<input class="form-control" name="routeName" />
+			</div>
+			<div class="form-group">
+				<label>Origen</label>
+				<input class="form-control" name="origin" />
+			</div>
+			<div class="form-group">
+				<label>Destino</label>
+				<input class="form-control" name="destiny" />
+			</div>
+			<button class="btn btn-success" id="Insert" type="submit" name="submit">Subir</button>  
+		</form>
+	</div>
+	<div class="tab-pane" id="brandSection">
+      	<!-- tabla units -->
+    	<h3>Insertar marca</h3>
+    	<form id="InsertbrandForm">
+			<div class="form-group"> 
+     			<label>Nombre de la marca</label>
+      			<input class="form-control" name="brandName" />
+			</div>
+			<div class="form-group">
+				<label>modelo</label>
+				<input class="form-control" name="model" />
+			</div>
+			<div class="form-group">
+				<label>placa</label>
+				<input class="form-control" name="licensePlate" />
+			</div>
+
+			<button class="btn btn-success" id="Insertbrand" type="submit" name="submit">Subir</button>
+		</form>
+	</div>
+</div>
+<script type="text/javascript" src="/public/enlaces/crear/crear.js"></script>
+  	<script type="text/javascript" src="/public/enlaces/crear/tab.js"></script>
+
+</body>
+</html>

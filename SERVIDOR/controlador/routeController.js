@@ -32,6 +32,7 @@ module.exports={
 			res.status(200).send({msg:"Insertado"});
 		});
 	},
+
 	delete:(req,res) =>{
 		let id= parseInt(req.body.id)
 		mydb.query("DELETE FROM routes WHERE idroute = ?",[id],(err,result) =>{
